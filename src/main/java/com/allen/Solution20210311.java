@@ -36,6 +36,7 @@ public class Solution20210311 {
         System.out.println(calculate(s));
     }
 
+
     public static int calculate(String s) {
 
         Deque<Integer> stack = new LinkedList<Integer>();
