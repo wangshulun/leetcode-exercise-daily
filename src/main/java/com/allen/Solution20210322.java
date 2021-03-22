@@ -45,6 +45,8 @@ public class Solution20210322 {
         int i = hammingWeight(2221111);
         System.out.println(i);
 
+        System.out.println(2 & 1);
+
     }
 
 
