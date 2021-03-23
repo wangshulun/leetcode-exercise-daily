@@ -1,5 +1,7 @@
 package com.allen;
 
+import java.net.URLClassLoader;
+
 /**
  * 191. 位1的个数
  * 编写一个函数，输入是一个无符号整数（以二进制串的形式），返回其二进制表达式中数字位数为 '1' 的个数（也被称为汉明重量）。
@@ -47,6 +49,15 @@ public class Solution20210322 {
 
         System.out.println(2 & 1);
 
+        System.out.println(6 & 5);
+
+
+        System.out.println(Integer.toBinaryString(100));
+        System.out.println(Integer.toBinaryString(99));
+        System.out.println(100 & 99);
+        System.out.println(Integer.toBinaryString(100 & 99));
+
+
     }
 
 
@@ -60,6 +71,7 @@ public class Solution20210322 {
         int ret = 0;
         while (n != 0) {
             n &= n - 1;
+            System.out.println(n);
             ret++;
         }
         return ret;
