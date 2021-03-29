@@ -38,8 +38,13 @@ public class Solution20210329 {
 
         int rev = 0;
         for (int i = 0; i < 32 && n != 0; ++i) {
+            System.out.println("--------------------------------");
             rev |= (n & 1) << (31 - i);
+            System.out.println(Integer.toBinaryString(rev));
+            System.out.println(Integer.toBinaryString(n));
             n >>>= 1;
+            System.out.println(Integer.toBinaryString(n));
+
         }
         return rev;
 
